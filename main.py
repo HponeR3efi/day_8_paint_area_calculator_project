@@ -1,0 +1,15 @@
+#day_8_paint_area_calculator
+
+import math
+
+def paint_calc(height , width , cover):
+  calc = (height * width) / cover
+  rounded = math.ceil(calc)
+  print(f"You'll need {rounded} cans of paint.")
+
+test_h = int(input("Height of wall: "))
+test_w = int(input("Width of wall: "))
+coverage = 5
+paint_calc(height=test_h, width=test_w, cover=coverage)
+
+
